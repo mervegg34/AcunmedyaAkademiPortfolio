@@ -1,4 +1,4 @@
-### 📋 Kişisel Portföy Sitesi
+## 📋 Kişisel Portföy Sitesi
 Acun Medya Akademi'de, değerli hocalarım Erhan Gündüz ve Murat Yücedağ rehberliğinde verilen ilk case ve projemdir.
 
 -🚀 Bu proje **ASP.NET MVC Framework** kullanılarak geliştirilmiş bir kişisel portföy sayfasıdır.
@@ -6,7 +6,7 @@ Acun Medya Akademi'de, değerli hocalarım Erhan Gündüz ve Murat Yücedağ reh
 -🛠 Admin paneli üzerinden, sitede görüntülenmesi gereken tüm veriler için ekleme, silme ve güncelleme işlemleri gerçekleştirilmektedir. 
 -🔄 Arayüzdeki tüm içerikler, **veritabanından dinamik** olarak çekilmektedir.
 
-## 🧰 Projede Kullanılan Teknolojiler:
+### 🧰 Projede Kullanılan Teknolojiler:
 - **ASP.NET MVC (Model-View-Controller)**
   Model-View-Controller yapısı ile uygulama geliştirme.
 - **Db First Yaklaşımı**
