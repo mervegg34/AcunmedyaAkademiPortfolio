@@ -1,31 +1,31 @@
-## 📋 Kişisel Portföy Sitesi
+# 📋 Kişisel Portföy Sitesi
 Acun Medya Akademi'de, değerli hocalarım Erhan Gündüz ve Murat Yücedağ rehberliğinde verilen ilk case ve projemdir.
 
 -🚀 Bu proje **ASP.NET MVC Framework** kullanılarak geliştirilmiş bir kişisel portföy sayfasıdır.
 -⚙️ Sitede yer alan bütün içeriklerin yönetimi için bir **Admin Paneli** bulunmaktadır.  
--🛠 Admin paneli üzerinden, sitede görüntülenmesi gereken tüm veriler için ekleme, silme ve güncelleme işlemleri gerçekleştirilmektedir. 
+-🛠 Admin paneli üzerinden, sitede görüntülenmesi gereken tüm veriler için ekleme, silme ve güncelleme işlemleri gerçekleştirilmektedir.
 -🔄 Arayüzdeki tüm içerikler, **veritabanından dinamik** olarak çekilmektedir.
 
-### 🧰 Projede Kullanılan Teknolojiler:
-- **ASP.NET MVC (Model-View-Controller)**
+## 🧰 Projede Kullanılan Teknolojiler:
+- **ASP.NET MVC (Model-View-Controller):**
   Model-View-Controller yapısı ile uygulama geliştirme.
-- **Db First Yaklaşımı**
+- **Db First Yaklaşımı:**
   Veritabanı şemasını modelleme.
-- **Entity Framework**
+- **Entity Framework:**
   ORM (Object-Relational Mapping) ile veritabanı işlemleri.
-- **LINQ**
+- **LINQ:**
   Veritabanı sorgularını daha verimli ve okunabilir hale getirmek.
-- **CRUD İşlemleri**
+- **CRUD İşlemleri:**
   Veritabanında kayıt oluşturma, okuma, güncelleme ve silme işlemleri.
-- **Bootstrap**
+- **Bootstrap:**
  Sayfa düzeni ve stil yönetimi için Bootstrap framework'ü.
-- **Layout Kontrolü**
+- **Layout Kontrolü:**
   Ortak şablonların yönetimi ve sayfa düzeni.
-- **Model-View-Controller Yapıları**
+- **Model-View-Controller Yapıları:**
   MVC yapısının temel bileşenleriyle sayfa düzeni ve iş mantığı.
-- **Partial View Kullanımı**
+- **Partial View Kullanımı:**
   Tekrarlayan bileşenlerin yönetimi ve yeniden kullanımı.
-- **Entity Framework Sorguları**
+- **Entity Framework Sorguları:**
   Entity Framework kullanarak veritabanı sorgularının yönetimi.
 
 
