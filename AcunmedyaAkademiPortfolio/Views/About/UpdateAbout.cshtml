@@ -1,0 +1,65 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblAbout
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Hakkımda Düzenleme Sayfası</h2>
+<br />
+
+<form method="post">
+    @Html.HiddenFor(x => x.AboutId)
+
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Title)</span>
+    <br />
+    <label>Doğum Tarihi</label>
+    @Html.TextBoxFor(x => x.Birthday, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Birthday)</span>
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Description)</span>
+    <br />
+    <label>Telefon Numarası</label>
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Phone)</span>
+    <br />
+    <label>Şehir</label>
+    @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.City)</span>
+    <br />
+    <label>Yaş</label>
+    @Html.TextBoxFor(x => x.Age, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Age)</span>
+    <br />
+    <label>Derece</label>
+    @Html.TextBoxFor(x => x.Degree, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Degree)</span>
+    <br />
+    <label>Mail</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Email)</span>
+    <br />
+    <label>Freelance</label>
+    @Html.TextBoxFor(x => x.Freelance, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Freelance)</span>
+    <br />
+    <label>Web Sitesi</label>
+    @Html.TextBoxFor(x => x.Age, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Age)</span>
+    <br />
+    <label>Fotoğraf Url</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.ImageUrl)</span>
+    <br />
+    <label>Açıklama2</label>
+    @Html.TextBoxFor(x => x.Title2, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Title2)</span>
+    <br />
+
+    <button class="btn btn-primary">Güncelle</button>
+
+</form>

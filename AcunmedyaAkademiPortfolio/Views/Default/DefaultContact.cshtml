@@ -1,0 +1,56 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblContact>
+
+@foreach (var item in Model)
+{
+
+<section id="contact" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>İletişim</h2>
+        <p>Benimle aşağıdaki formdan iletişime geçebilirsiniz.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-5">
+
+                <div class="info-wrap">
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div>
+                            <h3>Adres</h3>
+                            <p>@item.Address</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-telephone flex-shrink-0"></i>
+                        <div>
+                            <h3>Bizi Arayın!</h3>
+                            <p>@item.Phone</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                            <h3>Bize Ulaşın!</h3>
+                            <p>@item.Email</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <iframe src="@item.MapUrl" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            @Html.Action("SendMessage")
+
+        </div>
+
+    </div>
+
+</section>
+}

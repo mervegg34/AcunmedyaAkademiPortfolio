@@ -1,0 +1,23 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblSkill
+@{
+    ViewBag.Title = "AddSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Yeni Yetenek Ekleme Sayfası</h2>
+<br />
+<form method="post">
+    <label>Yetenek Adı</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Name)</span>
+    <br />
+    <label>Yetenek Oranı</label>
+    @Html.TextBoxFor(x => x.Percentage, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Percentage)</span>
+    <br />
+   
+    <button class="btn btn-primary">Kaydet</button>
+
+</form>
+

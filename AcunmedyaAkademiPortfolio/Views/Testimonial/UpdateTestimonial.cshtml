@@ -1,0 +1,34 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblTestimonial
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Referans Güncelleme Sayfası</h2>
+<br />
+<form method="post">
+    @Html.HiddenFor(x => x.TestimonialId)
+
+    <label>Ad Soyad</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Name)</span>
+    <br />
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Title)</span>
+    <br />
+    <label>Yorum</label>
+    @Html.TextBoxFor(x => x.Comment, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Comment)</span>
+    <br />
+    <label>Fotoğraf Url</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.ImageUrl)</span>
+    <br />
+
+    <button class="btn btn-primary">Güncelle</button>
+
+</form>
+
+

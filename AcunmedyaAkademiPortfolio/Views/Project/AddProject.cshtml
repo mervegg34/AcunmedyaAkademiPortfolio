@@ -1,0 +1,34 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblProject
+@{
+    ViewBag.Title = "AddProject";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Proje Ekleme Sayfası</h2>
+
+
+<form method="post">
+    <label>Proje Adı</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Name)</span>
+    <br />
+    <label>Görsel Url</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.ImageUrl)</span>
+    <br />
+    <label>Proje Açıklaması</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Description)</span>
+    <br />
+    <label>GitHub Url</label>
+    @Html.TextBoxFor(x => x.GithubUrl, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.GithubUrl)</span>
+    <br />
+    <label>Kategori</label>
+    @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.categories, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.CategoryId)</span>
+    <br />
+
+    <button class="btn btn-primary">Kaydet</button>
+
+</form>

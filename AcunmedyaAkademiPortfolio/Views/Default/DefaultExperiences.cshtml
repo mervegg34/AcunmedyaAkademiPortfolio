@@ -1,0 +1,49 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblExperience>
+
+<section id="resume" class="resume section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Eğitim Hayatım</h2>
+    </div><!-- End Section Title -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="resume-title">Eğitim</h3>
+                @foreach (var item in Model)
+                 {
+                    if (item.EducationId != 3)
+                    {
+                       <div class="resume-item">
+                        <h4>@item.Title</h4>
+                        <h5>@item.StartYear - @item.EndYear</h5>
+                        <p><em>@item.SchoolCompany</em></p>
+                        <p><em>@item.Department</em></p>
+                        <ul>
+                           <li>@item.Description</li>
+                        </ul>                   
+                       </div><!-- Edn Resume Item -->
+                    }
+
+                 }
+            </div>             
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="resume-title">Staj</h3>
+                @foreach (var item in Model)
+                {
+                    if (item.EducationId == 3)
+                    {
+                       <div class="resume-item">
+                         <h4>@item.Title</h4>
+                         <h5>@item.StartYear - @item.EndYear</h5>
+                         <p><em>@item.SchoolCompany</em></p>
+                         <ul>
+                            <li>@item.Description</li>
+                         </ul>
+                       </div><!-- Edn Resume Item -->
+                    }
+                 }     
+            </div>                
+        </div>
+    </div>
+</section>

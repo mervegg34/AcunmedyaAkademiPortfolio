@@ -1,0 +1,38 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblExperience
+@{
+    ViewBag.Title = "AddExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Yeni Deneyim Ekleme Sayfası</h2>
+<br />
+<form method="post">
+    <label>Okul / Şirket Adı</label>
+    @Html.TextBoxFor(x => x.SchoolCompany, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.SchoolCompany)</span>
+    <br />
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Title)</span>
+    <br />
+    <label>Fakülte / Bölüm</label>
+    @Html.TextBoxFor(x => x.Department, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Department)</span>
+    <br />
+    <label>Başlama Yılı</label>
+    @Html.TextBoxFor(x => x.StartYear, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.StartYear)</span>
+    <br />
+    <label>Bitirme Yılı</label>
+    @Html.TextBoxFor(x => x.EndYear, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.EndYear)</span>
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Description)</span>
+    <br />
+
+    <button class="btn btn-primary">Kaydet</button>
+
+</form>
+

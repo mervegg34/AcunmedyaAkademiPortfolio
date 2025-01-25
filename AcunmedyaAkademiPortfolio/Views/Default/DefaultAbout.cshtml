@@ -1,0 +1,51 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblAbout>
+
+@foreach (var item in Model)
+{
+<section id="about" class="about section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Hakkımda</h2>
+        <p>@item.Description</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+                <img src="@item.ImageUrl" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-8 content">
+                <h2>@item.Title</h2>
+                <br />
+                <ul>
+                   <li>@item.Title2</li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Doğum Tarihi:</strong> <span>@item.Birthday</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Websitesi:</strong> <span>@item.Website</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Telefon Numarası:</strong> <span>@item.Phone</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Şehir:</strong> <span>@item.City</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Yaş:</strong> <span>@item.Age</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Lisans:</strong> <span>@item.Degree</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Mail:</strong> <span>@item.Email</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>@item.Freelance</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+}

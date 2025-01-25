@@ -1,0 +1,34 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblContact
+
+@{
+    ViewBag.Title = "UpdateContact";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>İletişim Güncelleme Sayfası</h2>
+<br />
+<form method="post">
+    @Html.HiddenFor(x => x.ContactId)
+
+    <label>Adres</label>
+    @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Address)</span>
+    <br />
+    <label>Telefon Numarası</label>
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Phone)</span>
+    <br />
+    <label>Mail</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.Email)</span>
+    <br />
+    <label>Harita Url</label>
+    @Html.TextBoxFor(x => x.MapUrl, new { @class = "form-control" })
+    <span class="text-danger">@Html.ValidationMessageFor(x => x.MapUrl)</span>
+    <br />
+
+    <button class="btn btn-primary">Güncelle</button>
+
+</form>
+

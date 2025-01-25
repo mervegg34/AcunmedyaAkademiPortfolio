@@ -1,0 +1,27 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblMessage>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Mesajlar</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Ad Soyad</th>
+        <th>Mail</th>
+        <th>Konu</th>
+        <th>Yorum</th>
+        <th>Sil</th>
+    </tr>
+
+    @foreach (var item in Model)
+     {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Subject</td>
+            <td>@item.MessageContent</td>
+            <td><a href="/Message/DeleteMessage/@item.MessageId" class="btn btn-danger">Sil</a></td>
+        </tr>
+     }
+</table>

@@ -1,0 +1,15 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblBanner>
+
+@foreach (var item in Model)
+ {
+   <section id="hero" class="hero section dark-background">
+
+      <img src="@item.ImageUrl" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>@item.NameSurname</h2>
+        <p>Ben <span class="typed" data-typed-items="@item.Title">@item.Title</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+   </section>
+ }
